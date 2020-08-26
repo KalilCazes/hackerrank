@@ -15,7 +15,7 @@ func hourglassSum(arr [][]int32) int32 {
 	highestSum = math.MinInt32
 	for i := 0; i < len(arr)-2; i++ {
 		for j := 0; j < len(arr)-2; j++ {
-			sum := sumAux(arr, i, j)
+			sum := sumAux(arr, int32(i), int32(j))
 			if sum > highestSum {
 				highestSum = sum
 			}
